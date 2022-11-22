@@ -18,3 +18,7 @@ framework = arduino
 build_flags = -std=gnu++17
 build_unflags = -std=gnu++11
 monitor_speed = 115200
+
+# class diagram
+
+![](classes.jpg)

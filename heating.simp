@@ -1,0 +1,1268 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="13.40" multi-file="no" uid="simp8c638d7705744931bb7ca30505c2ee38">
+  <meta>
+    <name>heating</name>
+    <authors> </authors>
+    <description />
+  </meta>
+  <counters models="3">
+    <entity-names />
+    <entity-ids>
+      <counter>
+        <item-type type-id="group" type="Group" />
+        <value>133</value>
+      </counter>
+      <counter>
+        <item-type type-id="package" type="Package" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="property" type="Property" />
+        <value>33</value>
+      </counter>
+      <counter>
+        <item-type type-id="relationship" type="Association" />
+        <value>6</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>3</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlPackageDiagram</type>
+        <value>2</value>
+      </counter>
+    </diagrams>
+    <fields />
+  </counters>
+  <alias-groups />
+  <management uid="md-3c4cdc5769ad453e9cbeebb203f03746" name="" task-id-sequence="0">
+    <persons>
+      <person id="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-3a42bdddb96a4006a9ee1522e84a257d" />
+  <types default="C++">
+    <type-sets>
+      <type-set file="CppTypes.xml" />
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <parameters />
+      <types>
+        <type id="String" tid="" name="String" description="" />
+        <type id="Class:122eb92272344af3bfdcf1ec4545480b" tid="" name="Iheating_sensor" description="" class-ref="122eb92272344af3bfdcf1ec4545480b" />
+        <type id="Class:f6683208fa674fc0820d79f812fba760" tid="" name="Iheating_controller" description="" class-ref="f6683208fa674fc0820d79f812fba760" />
+        <type id="Class:bbc0e348d69d4c04b6f55e5b5d4e9f91" tid="" name="webServer" description="" class-ref="bbc0e348d69d4c04b6f55e5b5d4e9f91" />
+        <type id="using" tid="" name="using" description="" />
+        <type id="Dac_mcp4922" tid="" name="Dac_mcp4922" description="" />
+        <type id="std::map &lt; String, fnCmd &gt;" tid="" name="std::map &lt; String, fnCmd &gt;" description="" />
+        <type id="std::shared_ptr&lt;Icnt_dispenser&gt;" tid="" name="std::shared_ptr&lt;Icnt_dispenser&gt;" description="" />
+        <type id="Class:ef75b9b4e48d417d8e68b911a8425ccf" tid="" name="Iheating_heater" description="" class-ref="ef75b9b4e48d417d8e68b911a8425ccf" />
+        <type id="cnt_controller::" tid="" name="cnt_controller::" description="" />
+        <type id="Class:8086e35514434a5dbeb7f828dfb689d4" tid="" name="heating_controller" description="" class-ref="8086e35514434a5dbeb7f828dfb689d4" />
+        <type id="std::shared_ptr&lt;Icnt_motion&gt;" tid="" name="std::shared_ptr&lt;Icnt_motion&gt;" description="" />
+        <type id="Class:cec30eb5aaee4b97a817708b8fa976b3" tid="" name="arduinoSerial" description="" class-ref="cec30eb5aaee4b97a817708b8fa976b3" />
+        <type id="Sin_wave_dac" tid="" name="Sin_wave_dac" description="" />
+        <type id="std::shared_ptr&lt;Icnt_controller&gt;" tid="" name="std::shared_ptr&lt;Icnt_controller&gt;" description="" />
+        <type id="Class:8a3be0b08bbc496aac65f055efeebc1e" tid="" name="cmdParser" description="" class-ref="8a3be0b08bbc496aac65f055efeebc1e" />
+      </types>
+    </custom-types>
+  </types>
+  <items>
+    <item id="29a878fe9187478c9fd1dfa3da4422d4" cid="PROP028" type="property" name="" style-class="" owner="169cc7944a4e426bae5593c7a974a310" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="11/22/2022 11:10:06" visibility="private">
+      <feature />
+      <structural-feature type="Iheating_sensor" type-id="Class:122eb92272344af3bfdcf1ec4545480b" />
+      <property />
+    </item>
+    <item id="1dca063f026a4605820cb114ebed8a6c" cid="PROP031" type="property" name="" style-class="" owner="541d78c1d5e54e159a442857b7ed069b" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="11/22/2022 11:10:24" visibility="private">
+      <feature />
+      <structural-feature type="cmdParser" type-id="Class:8a3be0b08bbc496aac65f055efeebc1e" />
+      <property />
+    </item>
+    <item id="401c7acfc07246c98b109bce06531212" cid="PROP012" type="property" name="ArduinoInterface" style-class="" owner="605aeea7ccc344a0a8c4f52dc08f1c74" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="11/22/2022 11:04:47" visibility="private">
+      <tagged-values>
+        <tagged-value id="tv28d4464c88b44e849089f9b0783413e4" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="ArduinoInterface" />
+        <tagged-value id="tva08fc9ddf1bb402b88ecddb2724e0571" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pf044c426b8d647a5bbbd7003d2fcf8b6_158853743" />
+        <tagged-value id="tvb9d6fc074ce041478ff3f1efaa069275" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_motion.h" />
+        <tagged-value id="tv227df2ea5a2845ad803d897f7d5ec974" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+        <tagged-value id="tvc7060fb3ff294924bd3f15e82b1b20b2" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1488" />
+        <tagged-value id="tvc504f51e197c4c8ab283f8d72555e473" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="31" />
+        <tagged-value id="tv76dbac8f97f84f38a9562027d44697e2" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1683" />
+        <tagged-value id="tva3ff5402bcd14a3b82795082ad9bbe65" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="10/13/2022 16:17:01" />
+      </tagged-values>
+      <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+        <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+        <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <background type="solid" colors="#FFF2F2F2,#FFF2F2F2" />
+        <border color="#FF555555" width="2" dash-style="Solid" />
+        <label-connector color="#80000000" width="1" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+            <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+            <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <background type="solid" colors="#FF203D85,#FF203D85" />
+            <border color="#FF203D85" width="2" dash-style="Solid" />
+            <label-connector color="#80000000" width="1" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <feature />
+      <structural-feature type="arduinoSerial" type-id="Class:cec30eb5aaee4b97a817708b8fa976b3" />
+      <property />
+    </item>
+    <item id="dff358b092ac4ff7b1e3a7ff3139cd20" cid="PROP024" type="property" name="" style-class="" owner="ac290573d7d2495bb5adcef6dc92e872" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="11/22/2022 11:09:53" visibility="private">
+      <feature />
+      <structural-feature type="Iheating_heater" type-id="Class:ef75b9b4e48d417d8e68b911a8425ccf" />
+      <property />
+    </item>
+    <item id="701c779f57bb4170a054b2e4fe87874c" cid="PROP019" type="property" name="dispenserPtr" style-class="" owner="8086e35514434a5dbeb7f828dfb689d4" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="11/22/2022 11:04:47" visibility="private">
+      <tagged-values>
+        <tagged-value id="tvd2d64d83d451492e8d0a3c67e34cc1a3" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="dispenserPtr" />
+        <tagged-value id="tv044927bed0db41b5a469a0cb696ab961" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pf044c426b8d647a5bbbd7003d2fcf8b6_158853743" />
+        <tagged-value id="tv52fbb7a01b184cdd8879e1b92e661184" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.h" />
+        <tagged-value id="tvcfc2160ee9834d49a16b9c91228a75bc" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+        <tagged-value id="tv9b7e4837d84a4a23b7518c7d441c743f" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="815" />
+        <tagged-value id="tv69e4f4b55cb342d881816a71dce25628" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="45" />
+        <tagged-value id="tv1c196d4503ee48b08b21e6db4682c451" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1362" />
+        <tagged-value id="tv7114d57e2ea54cfa889f005aa52604b7" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="09/30/2022 18:17:46" />
+      </tagged-values>
+      <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+        <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+        <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <background type="solid" colors="#FFF2F2F2,#FFF2F2F2" />
+        <border color="#FF555555" width="2" dash-style="Solid" />
+        <label-connector color="#80000000" width="1" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+            <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+            <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <background type="solid" colors="#FF203D85,#FF203D85" />
+            <border color="#FF203D85" width="2" dash-style="Solid" />
+            <label-connector color="#80000000" width="1" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <feature />
+      <structural-feature type="std::shared_ptr&lt;Icnt_dispenser&gt;" type-id="std::shared_ptr&lt;Icnt_dispenser&gt;" />
+      <property />
+    </item>
+    <item id="f1f1669a19c74459818f386b08c73a70" cid="PROP022" type="property" name="" style-class="" owner="4fd70ef4f9524976a6b3bf3de96c835b" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="11/22/2022 11:09:37" visibility="private">
+      <feature />
+      <structural-feature type="Iheating_controller" type-id="Class:f6683208fa674fc0820d79f812fba760" />
+      <property />
+    </item>
+    <item id="2126f9a9fd1f49d9bd64d44f79d2041c" cid="PROP020" type="property" name="motionPtr" style-class="" owner="8086e35514434a5dbeb7f828dfb689d4" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="11/22/2022 11:04:47" visibility="private">
+      <tagged-values>
+        <tagged-value id="tveba97056d8b8455c95d945a8485ef3fb" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="motionPtr" />
+        <tagged-value id="tv7930252f4c6c49c4bb3e74e8f0031213" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pf044c426b8d647a5bbbd7003d2fcf8b6_158853743" />
+        <tagged-value id="tv9ab9e0c88cb442caabb4292b4ec55758" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.h" />
+        <tagged-value id="tvaa7ae205feae47319672b701ffffe0cc" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+        <tagged-value id="tv9c904e17fcbe41a78f555212862b19ce" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="866" />
+        <tagged-value id="tvab4e09a293f14fb5ae113032d9f71b01" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="39" />
+        <tagged-value id="tvb48695445d4145458618b3b9d27bbbe2" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1362" />
+        <tagged-value id="tv86bc3370e151460685a638b8d3e42240" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="09/30/2022 18:17:46" />
+      </tagged-values>
+      <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+        <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+        <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <background type="solid" colors="#FFF2F2F2,#FFF2F2F2" />
+        <border color="#FF555555" width="2" dash-style="Solid" />
+        <label-connector color="#80000000" width="1" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+            <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+            <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <background type="solid" colors="#FF203D85,#FF203D85" />
+            <border color="#FF203D85" width="2" dash-style="Solid" />
+            <label-connector color="#80000000" width="1" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <feature />
+      <structural-feature type="std::shared_ptr&lt;Icnt_motion&gt;" type-id="std::shared_ptr&lt;Icnt_motion&gt;" />
+      <property />
+    </item>
+    <item id="6751c701ce664087a277bdb77cfb0d48" cid="PROP030" type="property" name="" style-class="" owner="541d78c1d5e54e159a442857b7ed069b" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="11/22/2022 11:10:24" visibility="private">
+      <feature />
+      <structural-feature type="webServer" type-id="Class:bbc0e348d69d4c04b6f55e5b5d4e9f91" />
+      <property />
+    </item>
+    <item id="2cb83ecaadc54b14b4551d43f1673a1a" cid="PROP025" type="property" name="" style-class="" owner="ac290573d7d2495bb5adcef6dc92e872" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="11/22/2022 11:09:53" visibility="private">
+      <feature />
+      <structural-feature type="heating_controller" type-id="Class:8086e35514434a5dbeb7f828dfb689d4" />
+      <property />
+    </item>
+    <item id="df1f5b131ac849079c0ab1811e7f7971" cid="PROP021" type="property" name="Intarg" style-class="" owner="8086e35514434a5dbeb7f828dfb689d4" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="11/22/2022 11:04:47" visibility="private">
+      <tagged-values>
+        <tagged-value id="tv2b4ef1be5538476a9a6e3e09605c88d2" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Intarg" />
+        <tagged-value id="tva128c16c338148bfb8de1cfbeacdb030" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pf044c426b8d647a5bbbd7003d2fcf8b6_158853743" />
+        <tagged-value id="tv7c6940c5a110478286119a46a42b7723" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.h" />
+        <tagged-value id="tv3b2d120585044f89b81320669a3413bf" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+        <tagged-value id="tv4404f4f8cfa345af927ba2f8abd25af2" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="911" />
+        <tagged-value id="tv7d257f371ee54ce193cb760fc32c1867" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="14" />
+        <tagged-value id="tvd04f4d6152e849f9b16dfdc4123179ac" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1362" />
+        <tagged-value id="tvff65ada46c2f43fab8a1afdd297a7702" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="09/30/2022 18:17:46" />
+      </tagged-values>
+      <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+        <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+        <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <background type="solid" colors="#FFF2F2F2,#FFF2F2F2" />
+        <border color="#FF555555" width="2" dash-style="Solid" />
+        <label-connector color="#80000000" width="1" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+            <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+            <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <background type="solid" colors="#FF203D85,#FF203D85" />
+            <border color="#FF203D85" width="2" dash-style="Solid" />
+            <label-connector color="#80000000" width="1" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <feature />
+      <structural-feature type="String" type-id="String" />
+      <property />
+    </item>
+    <item id="6ceeb8d7678746179279bc1d2d86e17e" cid="PROP023" type="property" name="" style-class="" owner="4fd70ef4f9524976a6b3bf3de96c835b" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="11/22/2022 11:09:37" visibility="private">
+      <feature />
+      <structural-feature type="cmdParser" type-id="Class:8a3be0b08bbc496aac65f055efeebc1e" />
+      <property />
+    </item>
+    <item id="80f11e3f0cca46739326932f82df04d1" cid="PROP029" type="property" name="" style-class="" owner="169cc7944a4e426bae5593c7a974a310" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="11/22/2022 11:10:06" visibility="private">
+      <feature />
+      <structural-feature type="heating_controller" type-id="Class:8086e35514434a5dbeb7f828dfb689d4" />
+      <property />
+    </item>
+  </items>
+  <models>
+    <model id="pf044c426b8d647a5bbbd7003d2fcf8b6_158853743" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>11/22/2022 11:02:26</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items>
+        <item id="12c2354a93e04edc87a10b93cb10fe0d" cid="PKG002" type="package" name="" style-class="" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="11/22/2022 11:04:47">
+          <tagged-values>
+            <tagged-value id="tvdcdcee32085f4224a87a27cdbd0980e8" name="namespace" type="text" multiple="false" hidden="false" value="" />
+            <tagged-value id="tv66d5b6bda85a4c9ca3e339021464cba7" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+          </tagged-values>
+        </item>
+      </abstract-items>
+      <sub-models>
+        <model id="pdb18ae28b28341a0a8eb03f767c957f8_745739013" name="" namespace="" order-index="3">
+          <meta>
+            <authors>
+              <author> </author>
+            </authors>
+            <description />
+            <creation-date>11/22/2022 11:04:47</creation-date>
+            <change-date>01/01/0001 00:00:00</change-date>
+            <revision-count>0</revision-count>
+            <version />
+          </meta>
+          <tagged-values>
+            <tagged-value id="tv2bddb9db2b0347bd82dac956b7e9f3b4" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+          </tagged-values>
+          <abstract-items>
+            <item id="ebf16b8f8fbb4e599c66dcf5a2f65b1f" cid="GNR001" type="generalization" name="" style-class="" creation-date="11/22/2022 11:04:47" from="605aeea7ccc344a0a8c4f52dc08f1c74" to="122eb92272344af3bfdcf1ec4545480b" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv475be839d98a43ea8995d01857df2183" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="cec30eb5aaee4b97a817708b8fa976b3" cid="C001" type="class" name="arduinoSerial" style-class="" creation-date="11/22/2022 11:04:47" visibility="undefined">
+              <tagged-values>
+                <tagged-value id="tv3ab15b464f5146dd916943e985e64910" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tvcbad56951df4432d913b7bc6428ecf80" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="arduinoSerial" />
+                <tagged-value id="tv8e3bc155b6c74059aac7583e46185ab0" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pf044c426b8d647a5bbbd7003d2fcf8b6_158853743" />
+                <tagged-value id="tv43fb94d8ff22409f8a7fb033a14dcf90" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_motion.h" />
+                <tagged-value id="tv30c5cf8c30f6474ca070237c8126cd22" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv9d0c126ba494449c85b1518b27291999" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="262" />
+                <tagged-value id="tva51df01015bb4fcd8b0098906b12634b" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="962" />
+                <tagged-value id="tvaff10dea3a354b1b8a7268c5b0e7da59" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1683" />
+                <tagged-value id="tvc091090538ca4f49a12c79a527ef7f2a" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="10/13/2022 16:17:01" />
+              </tagged-values>
+            </item>
+            <item id="122eb92272344af3bfdcf1ec4545480b" cid="C002" type="class" name="Iheating_sensor" style-class="" creation-date="11/22/2022 11:04:47" visibility="undefined">
+              <tagged-values>
+                <tagged-value id="tv650c39308c4b45439bfd638f94526710" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tvb578234c3be04fd69b02698bcb5fd944" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Icnt_motion" />
+                <tagged-value id="tv2068390412224ebd9d941f3cc8ea2dd1" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pf044c426b8d647a5bbbd7003d2fcf8b6_158853743" />
+                <tagged-value id="tv4f4d9b40d8aa43f5ba84765eb8c9dff2" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_motion.h" />
+                <tagged-value id="tv142356c1496d4188a311594f24481189" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tvb89cbfb56eb94077869dbe19f5287394" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1228" />
+                <tagged-value id="tvd120dc40cc844fc48d465444c1b7f726" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="202" />
+                <tagged-value id="tv55a99ff69fd14130b09bb963ea278513" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1683" />
+                <tagged-value id="tv2fa90971046c40929d1f052eb22f7704" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="10/13/2022 16:17:01" />
+              </tagged-values>
+              <operations>
+                <operation id="oaa058fdd164647449f181b6af35b5d06344" cid="OP002" name="move_up" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public" abstract="true" virtual="true">
+                  <tagged-values>
+                    <tagged-value id="tv818cab3cb6dc417c969279127a3d4efd" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="move_up" />
+                    <tagged-value id="tvee6c7f0b8b284a43bf082829b325d942" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_motion.h" />
+                    <tagged-value id="tvbfe2a899c3b54c3a804d7b9db3ae70af" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv6a632cc31be64e7eb6c642b6a10a74a6" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1293" />
+                    <tagged-value id="tvd2ed22d206a5401db70a1be905f989d1" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="27" />
+                  </tagged-values>
+                </operation>
+                <operation id="ob18b2f621d504cbeb1711955b3ab9ed4344" cid="OP003" name="move_down" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public" abstract="true" virtual="true">
+                  <tagged-values>
+                    <tagged-value id="tv3114ebb1ef4a494c8bba8e4a028a20c6" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="move_down" />
+                    <tagged-value id="tv4f5f3665bdb147ca8301eb75fcfd50aa" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_motion.h" />
+                    <tagged-value id="tv7089fdb9b81547bcbe3ccdd0d743b517" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvb5a4f599cf274ddfa56e6ab01d81a539" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1326" />
+                    <tagged-value id="tvcab4b78578664f13bc1d805bbed5eb10" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="29" />
+                  </tagged-values>
+                </operation>
+                <operation id="oe5d1c4a0291c4cb28799379e8c8acfcb344" cid="OP004" name="unlock" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public" abstract="true" virtual="true">
+                  <tagged-values>
+                    <tagged-value id="tv3038d86f980b46029594bc02c34efedf" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="unlock" />
+                    <tagged-value id="tv58eab92cd2804facb4839e44be8d45e3" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_motion.h" />
+                    <tagged-value id="tvd07dd78991ff4e00a653ede843e3befb" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv13f1fb2eb90c42888cb54c5ee158229b" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1361" />
+                    <tagged-value id="tvd736e9320b014122953d9792d4ca37b4" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="26" />
+                  </tagged-values>
+                </operation>
+                <operation id="ofbc63d3446de43f4bb0cd1f5fbec0d79344" cid="OP005" name="Icnt_motion" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public" virtual="true">
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv6fb3190cd14941b68856949c207a80df" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Icnt_motion" />
+                    <tagged-value id="tvafc09c4c395b413ba697c774c35b3382" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_motion.h" />
+                    <tagged-value id="tv3ae58b080d9b4bf78c0f4668ef69e4fc" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv9b02c275921c4c0bb70ed3731c8d0837" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1393" />
+                    <tagged-value id="tv6d7373cc814e47499ebdaf54af1829d2" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="33" />
+                  </tagged-values>
+                </operation>
+              </operations>
+              <source-codes>
+                <source-code language="ActionScript" />
+              </source-codes>
+            </item>
+            <item id="bc069bdf5d7b491a964109db8bb129d0" cid="C005" type="class" name="heating_heater" style-class="" creation-date="11/22/2022 11:04:47" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv1dacc97d80154458b7c7d7e377501dd1" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tva352fe93336149feaf4e3e693fa8d315" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="cnt_dispenser" />
+                <tagged-value id="tv397bb60bb08743228598723125b71bcd" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pf044c426b8d647a5bbbd7003d2fcf8b6_158853743" />
+                <tagged-value id="tv7e55554c2e1d4f65ac9e35d9fe1b7e5e" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_dispenser.h" />
+                <tagged-value id="tv6463996eeff5452698bcff3140bf6b76" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv7c55f758fa4f45e6bb22448920cf2b4f" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="625" />
+                <tagged-value id="tv93b2cab76ce64c6dadfe8e46cea64a74" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="323" />
+                <tagged-value id="tv115bad3f80ee4adfa65aacd9ad68307f" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="954" />
+                <tagged-value id="tvfd7074a133504e09acc5100778151a2a" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="09/30/2022 18:17:46" />
+              </tagged-values>
+              <owned-items>
+                <owned-item ref="4c2fde7dfdc04fb89bec7d6632a6729b" />
+                <owned-item ref="6e6c68f089584d2c822330ae0b73eace" />
+              </owned-items>
+              <attributes>
+                <attribute id="a0055c04eed8c4dbeb340aa41b09bc807344" cid="PROP013" name="dac_obj" creation-date="11/22/2022 11:04:47" property-ref="4c2fde7dfdc04fb89bec7d6632a6729b" />
+                <attribute id="a13fda42463a94a96adfd0b843bb96c03344" cid="PROP014" name="sin_obj" creation-date="11/22/2022 11:04:47" property-ref="6e6c68f089584d2c822330ae0b73eace" />
+              </attributes>
+              <operations>
+                <operation id="o159fc066d8f44971bddfe35adcf302cf344" cid="OP022" name="cnt_dispenser" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public" virtual="true">
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv796044d327ef4a8c8da5be0a1a569368" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="cnt_dispenser" />
+                    <tagged-value id="tvad26a1ddb11e418089bca03a9e0434bc" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_dispenser.h" />
+                    <tagged-value id="tv797f26285fa34e3683f472ffa767e815" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv3f8c2364ab0c46479cdf4d7b8880bec6" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="909" />
+                    <tagged-value id="tv4b1b302987614c0892b14127e7ee84f1" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="35" />
+                  </tagged-values>
+                </operation>
+                <operation id="o2bb7ddf1be564dbfa1409b176f6bc4ef344" cid="OP023" name="vibrate" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tv9709e1a6258a4f77bec27911cd8d9ec9" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="vibrate" />
+                    <tagged-value id="tva64e370fbb864415969e43c23623d56f" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_dispenser.cpp" />
+                    <tagged-value id="tv1943ec7c5c654fe19e8f57d6d8fc05f7" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvf708342e9f57446ea53dcce8d1a7d38e" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="436" />
+                    <tagged-value id="tvb27cbb1367734bb68812542053e0c561" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="105" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+   Serial.println("sin output requested");
+   sin_obj.sin_output();
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o1a63beb91ed24dfc90f22938000b032b344" cid="OP024" name="turn_on" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tv3b95dd2239da48a49a61f92bf59ec754" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="turn_on" />
+                    <tagged-value id="tv97c4a77db2aa426aaef82b5aae56b897" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_dispenser.cpp" />
+                    <tagged-value id="tv737d9c989ae8444ea247c3a3a35d6dc5" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv7f9ce21214f842aa8e3cf5cdcee330fa" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="545" />
+                    <tagged-value id="tv2c2ea0a3ff9a4cc0ae83439e9bbebdf4" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="97" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+   Serial.print("dac turning on");
+   sin_obj.dac_enable();
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o8f2eb3690cd041aeae0c43973acd6b67344" cid="OP025" name="turn_off" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tv3853c35e39f84ce1889255348df0266f" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="turn_off" />
+                    <tagged-value id="tvec3067d6521c4ec08decde7b3422575d" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_dispenser.cpp" />
+                    <tagged-value id="tv67c45411ff5f4a6fa7c139c93f083a73" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv2809d484875f40108dc3f57f9f542c01" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="644" />
+                    <tagged-value id="tvbd27c35491d4452daaa890cf9c950099" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="65" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+   sin_obj.dac_disable();
+
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oa99ac9cadd9b440e9d32d3e74004a16c344" cid="OP026" name="set_duration" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p3cc0765cd6a14d4380c6f139c4fd1438" name="duration" type="u_int" type-id="u_int" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv29f0201bb29c4eb4867adc314bcd95e3" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="set_duration" />
+                    <tagged-value id="tv85fc1181a7854781a7f2bc2af7632699" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_dispenser.cpp" />
+                    <tagged-value id="tvf1b12dc784414839b63a36ea166df16f" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv3ed982095b7a409f879e2c52398e778a" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="711" />
+                    <tagged-value id="tv2201dafa96974a0f81f6092110b437f8" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="166" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+   Serial.println("setting duration  to: ");
+   Serial.println(duration);
+   sin_obj.set_duration(duration);
+</source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="e44003b4a01b4ff8b568841d6215ac5f" cid="GNR003" type="generalization" name="" style-class="" creation-date="11/22/2022 11:04:47" from="8086e35514434a5dbeb7f828dfb689d4" to="f6683208fa674fc0820d79f812fba760" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvff5d58e705b94f2ca9e805425b3f2e79" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="f6683208fa674fc0820d79f812fba760" cid="C006" type="class" name="Iheating_controller" style-class="" creation-date="11/22/2022 11:04:47" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv8574809bb3874c6f83d9b604a0f664de" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tvfe4efe8ad1cf488bb06a41f1b0f0aa38" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Icnt_controller" />
+                <tagged-value id="tv3f8ced2d48704806b2ed06f845a7d766" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pf044c426b8d647a5bbbd7003d2fcf8b6_158853743" />
+                <tagged-value id="tv1e165be7293c4d188a6e78d064155a28" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.h" />
+                <tagged-value id="tv8ecee5c005a24e6eb7e6c6ec086c4515" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv6790a4f7d13e4b4890e7e8f9f4742650" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="306" />
+                <tagged-value id="tv619ddda9e7b0464d856e0887e53a1f8b" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="441" />
+                <tagged-value id="tvf2ed954cd6814b50b445a34b093f48d3" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1362" />
+                <tagged-value id="tvbfa431007c024d7ab0f500c40a671ef0" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="09/30/2022 18:17:46" />
+              </tagged-values>
+              <operations>
+                <operation id="obcd033a8d6814c1bbc7e208bbd52c133344" cid="OP031" name="unlock" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public" abstract="true" virtual="true">
+                  <tagged-values>
+                    <tagged-value id="tvd6d0c84c7e9a4664a605381798dcad11" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="unlock" />
+                    <tagged-value id="tv0cd46cb4a4a9491282ce7f7af5f9ca30" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.h" />
+                    <tagged-value id="tve9bdd832475943bcb0b0d0f95a3d1a71" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvb249230117ca49c39a16716f102d3fcf" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="381" />
+                    <tagged-value id="tv91b6dd9b8c0640d79ed8f9d0372c6690" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="26" />
+                  </tagged-values>
+                </operation>
+                <operation id="o0acc9f112f21408db369981f6e6ac7cc344" cid="OP032" name="move_down" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public" abstract="true" virtual="true">
+                  <tagged-values>
+                    <tagged-value id="tv669160e2bb704047b4dee52e3af0ee75" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="move_down" />
+                    <tagged-value id="tv5fa1c4b2cfa243d89c43d89f76f8be45" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.h" />
+                    <tagged-value id="tv72322c9d5b7049c2b8f1326542604363" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvdefafa2f28c040e0b88f41511334d148" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="413" />
+                    <tagged-value id="tv7247cfd955114942975aa33f487b4642" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="29" />
+                  </tagged-values>
+                </operation>
+                <operation id="o47b9128dc06b4f308ca0c51378ea0f6e344" cid="OP033" name="move_up" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public" abstract="true" virtual="true">
+                  <tagged-values>
+                    <tagged-value id="tv83bd5f04ed8048bba89328b53e9be5b4" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="move_up" />
+                    <tagged-value id="tv0207d1a2e41e4640b493e5742f80afaf" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.h" />
+                    <tagged-value id="tvfb97fda98a55493d8392b12cf39bb3cf" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv79b145030d7a4455a6a536f546bdc4dd" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="448" />
+                    <tagged-value id="tv41c57841dd1741eead697b1ae544d8e8" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="27" />
+                  </tagged-values>
+                </operation>
+                <operation id="o3d3fdc5eedde43a79fe6d0d09cd3ad69344" cid="OP034" name="vibrate" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public" abstract="true" virtual="true">
+                  <tagged-values>
+                    <tagged-value id="tvd9be796cb88d4eeaa42829c86a942bcb" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="vibrate" />
+                    <tagged-value id="tvbd6d6701f57f4906b771f0fed44f42d0" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.h" />
+                    <tagged-value id="tve3d2490a299a471ba9c7ba2bd6cd0662" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvadcc7bd933a0445a8b00071cf1ea3fd1" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="481" />
+                    <tagged-value id="tv8f637b84fe2d4f18a7334806915c3671" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="27" />
+                  </tagged-values>
+                </operation>
+                <operation id="oc7a08d4ce13844389af53155f4ffd166344" cid="OP035" name="turn_on" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public" abstract="true" virtual="true">
+                  <tagged-values>
+                    <tagged-value id="tv59942c993a8e4282a7f45f123d3a7628" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="turn_on" />
+                    <tagged-value id="tve7c5014443e7410ca92c1a11b331b3d4" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.h" />
+                    <tagged-value id="tv1b21fbe5973b41b78c64741954f54a99" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv88fab1c32acd4a12bfd5f4ed8d8cc81c" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="514" />
+                    <tagged-value id="tv531de480d8534645b3d3b8abbed94942" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="27" />
+                  </tagged-values>
+                </operation>
+                <operation id="od86659e2911749579f6142cc79370b8a344" cid="OP036" name="turn_off" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public" abstract="true" virtual="true">
+                  <tagged-values>
+                    <tagged-value id="tv0fa25a631e4549dfb0d56f0d82abe1ce" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="turn_off" />
+                    <tagged-value id="tvf1981fc6490643a69b8f4dcfa61fdcf3" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.h" />
+                    <tagged-value id="tv55dfda60bed04dc9aee6cf400ffbff55" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvceea77042ebc45519fd0a197b50bbda7" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="547" />
+                    <tagged-value id="tv03ae475077704bb19ee6cf3debf9d8e1" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="28" />
+                  </tagged-values>
+                </operation>
+                <operation id="o0ba6d2dd69064d8ebe772c664600f847344" cid="OP037" name="set_dur" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public" abstract="true" virtual="true">
+                  <tagged-values>
+                    <tagged-value id="tv956b2022e158492f825f346746791a62" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="set_dur" />
+                    <tagged-value id="tv644cc09bf7ce4d1cbf1590a062443fb1" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.h" />
+                    <tagged-value id="tv47aa5308b2a9454383141cd7bc9b7083" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv3734eecdbe5245899ac00a39c7d604ea" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="581" />
+                    <tagged-value id="tv71592be4b8174032bbf3b16c4f65a220" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="26" />
+                  </tagged-values>
+                </operation>
+                <operation id="oca03e6f9037e4114b6ab080f5bb222fa344" cid="OP038" name="set_duration" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public" abstract="true" virtual="true">
+                  <parameters>
+                    <parameter id="p4b516c81d6f044ac98c09095617557f8" name="duration" type="u_int" type-id="u_int" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tva954529e818f421bbc1524234f82e8d1" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="set_duration" />
+                    <tagged-value id="tvf273700c5e8b4f8898df82b88c9f71be" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.h" />
+                    <tagged-value id="tv03b11125edba4639b9ca2a6d294b638c" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv7593f80ad2ca49f29f603d09e176e92b" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="613" />
+                    <tagged-value id="tv86f08f2a64ba450398488c2b74dc10ac" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="46" />
+                  </tagged-values>
+                </operation>
+                <operation id="of8d41d86fdd5469997e98e4bb9311abc344" cid="OP039" name="getArg" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public" abstract="true" virtual="true">
+                  <parameters>
+                    <parameter id="pbb19e1263b6b4c2389c371c5d837b072" name="arg" type="String" type-id="String" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tvbeb471f3b0da4e4989b4841f89d74653" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getArg" />
+                    <tagged-value id="tv68c410fb7c134427898aeb7724c84432" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.h" />
+                    <tagged-value id="tv7939f4bb870c4a5cb5afcfb735e39ab6" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvdaab04e755d447c0a5315a4607ea45bc" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="665" />
+                    <tagged-value id="tv64a4e976c20b4d9dba8f6ad9bf5858b2" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="35" />
+                  </tagged-values>
+                </operation>
+                <operation id="o4993b60938864f5983d5654141a0df0d344" cid="OP040" name="Icnt_controller" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public" virtual="true">
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tvbba5ba52050c4ef999ede38393519361" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Icnt_controller" />
+                    <tagged-value id="tvca5969d9fbd043bcbadf876c02e05104" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.h" />
+                    <tagged-value id="tv3045cbc5fda14dc293c387ad97e9d5ac" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvbfae3a7420d6418c8f285a7262ae844b" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="706" />
+                    <tagged-value id="tvc35679a297d543cb9d074566debb9266" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="37" />
+                  </tagged-values>
+                </operation>
+              </operations>
+              <source-codes>
+                <source-code language="ActionScript" />
+              </source-codes>
+            </item>
+            <item id="605aeea7ccc344a0a8c4f52dc08f1c74" cid="C003" type="class" name="heating_sensor" style-class="" creation-date="11/22/2022 11:04:47" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv2543bd1f167a493591898289064b2f9d" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tvc7243d968fdd4116b471aa50cea28556" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="cnt_motion" />
+                <tagged-value id="tv06692ed762d042ca91340247e4095a96" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pf044c426b8d647a5bbbd7003d2fcf8b6_158853743" />
+                <tagged-value id="tv09e7c91deaa64e269cb26844051305c2" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_motion.h" />
+                <tagged-value id="tva9f0aded72e04f2995fd6e27f9f800e8" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv3c70c57f9a9f477fa39dc22ffddd5854" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1432" />
+                <tagged-value id="tvabbda2dc42e54a62a24a3a3230ad52b4" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="245" />
+                <tagged-value id="tvdcb84e0a44444666b01e5a35f70954b2" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1683" />
+                <tagged-value id="tvf281652b059c48c6a350d97c9b8523e6" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="10/13/2022 16:17:01" />
+              </tagged-values>
+              <owned-items>
+                <owned-item ref="401c7acfc07246c98b109bce06531212" />
+              </owned-items>
+              <attributes>
+                <attribute id="a5332fe3aecb64d76914864b21f23d7fd344" cid="PROP012" name="ArduinoInterface" creation-date="11/22/2022 11:04:47" property-ref="401c7acfc07246c98b109bce06531212" />
+              </attributes>
+              <operations>
+                <operation id="o675594ab6654479f9f2e4c2c9c9b9c77344" cid="OP010" name="cnt_motion" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public" virtual="true">
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv134f8804520d4aec80501bcac6461873" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="cnt_motion" />
+                    <tagged-value id="tvedf730606ce74ac2af3fffdf7138398e" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_motion.h" />
+                    <tagged-value id="tv7403d53def9346298e1e2cff66981872" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv0291c3a89520410983b14a671908aa66" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1641" />
+                    <tagged-value id="tv7b6e118a657c479393599d4076d8a4fa" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="32" />
+                  </tagged-values>
+                </operation>
+                <operation id="o0552620c42464636a1fda73d58906633344" cid="OP027" name="move_down" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tvd1e5ffec9c344b9da13dd2ef1c0c3e84" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="move_down" />
+                    <tagged-value id="tvb76d3fe63f78451a8ca96cdc716cfdb6" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_motion.cpp" />
+                    <tagged-value id="tvd46e3e33651f4f58a766e789920ca0fc" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv63cebb275a0f49e2a01c237706e109cb" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="191" />
+                    <tagged-value id="tve4af4d1783f34fd7879663c89f0b12a8" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="130" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    Serial.println("arduino move down requested");
+    ArduinoInterface.executeCmd("down");
+
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oe0590e2e43414bc6b6cd61b6251bb111344" cid="OP028" name="move_up" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tvb8bcbbefcc984eadb1357525f99c6502" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="move_up" />
+                    <tagged-value id="tv773bb1eba39c4775b24a928c10d8bfce" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_motion.cpp" />
+                    <tagged-value id="tv3d27d0ee16274c759394ce7ffed24ce3" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvd8c3cf1622ba4bdb90feea74328044e3" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="327" />
+                    <tagged-value id="tv6796b2c74e494c2fb822cd06f0179fe9" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="126" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    Serial.println("arduino move up requested");
+
+    ArduinoInterface.executeCmd("up");
+
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o8c89f073567e4ea3aa61fb691e74a151344" cid="OP029" name="unlock" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tve74736e82f344eb794b21f9f5421ac8d" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="unlock" />
+                    <tagged-value id="tv1be81dfdf1d5466795d8b3265f13a9ea" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_motion.cpp" />
+                    <tagged-value id="tv96198b052fcf4d61b2a3cae6af9deb0f" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv445e699fa0b446828c1002050410750f" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="457" />
+                    <tagged-value id="tv4078498441694038bd9dbdcc755e1d8d" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="117" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+ Serial.println("arduino unlock requested");
+    ArduinoInterface.executeCmd("id");
+</source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+              <source-codes>
+                <source-code language="ActionScript" />
+              </source-codes>
+            </item>
+            <item id="ef75b9b4e48d417d8e68b911a8425ccf" cid="C004" type="class" name="Iheating_heater" style-class="" creation-date="11/22/2022 11:04:47" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvfe875e845f5843548336637ae93de741" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tvb882dba9f5864dd0a5eb99bf1f6bd1ff" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Icnt_dispenser" />
+                <tagged-value id="tv852adef39f204ed9bd709b43165121e5" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pf044c426b8d647a5bbbd7003d2fcf8b6_158853743" />
+                <tagged-value id="tvdef6e6a427b943fbad33580dff24440d" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_dispenser.h" />
+                <tagged-value id="tv8758b84b270545bd93511b12dd09aee6" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv1ec8d8f674574c77917c970a064baaad" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="356" />
+                <tagged-value id="tv7248d635067c40689b208b6b606db6fa" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="265" />
+                <tagged-value id="tv4e80355b1de2404ebcb92c9c612136db" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="954" />
+                <tagged-value id="tv0a9f7cbb673e44c8ab9b42a7e12f272d" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="09/30/2022 18:17:46" />
+              </tagged-values>
+              <operations>
+                <operation id="o94406a1f5b1848d6adf0daad8404dd7c344" cid="OP012" name="vibrate" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public" abstract="true" virtual="true">
+                  <tagged-values>
+                    <tagged-value id="tv5a44cd133137436b9a0760fa0720f59d" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="vibrate" />
+                    <tagged-value id="tve430ff2730464884becaf8c839cd3f9c" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_dispenser.h" />
+                    <tagged-value id="tv1644ab8362d54879bb5766b55102397c" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvd80c9b437e0e431db8cd021e204015ae" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="429" />
+                    <tagged-value id="tvc4eafa263f4246b8bac5f2cfe1e4ec26" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="27" />
+                  </tagged-values>
+                </operation>
+                <operation id="o3708a245ca3b402caca031268d43cd69344" cid="OP013" name="turn_on" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public" abstract="true" virtual="true">
+                  <tagged-values>
+                    <tagged-value id="tvc6b488b1d8144e99b4eaa5ec095386c7" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="turn_on" />
+                    <tagged-value id="tv52108bb6b60e42d89fe622b8efebaacf" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_dispenser.h" />
+                    <tagged-value id="tv45e1da0ffd864a4aba02f25fd7f392d6" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tva8c363aceeaa4c0486d39a2231e10c13" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="462" />
+                    <tagged-value id="tv807bd93a21304113bdd1f17ad6c4f61e" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="27" />
+                  </tagged-values>
+                </operation>
+                <operation id="o1ed35b7a853d4b088afc645ffb7c2a57344" cid="OP014" name="turn_off" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public" abstract="true" virtual="true">
+                  <tagged-values>
+                    <tagged-value id="tv7411f0a1d39e44278fd3a5c94bb033fa" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="turn_off" />
+                    <tagged-value id="tvad19ab0bc8944411bac4f76bab4f9159" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_dispenser.h" />
+                    <tagged-value id="tva72b518734f94cbaac57407a266c8e08" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv52fd622797564bbbbefddb50ade90268" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="495" />
+                    <tagged-value id="tvedc94595983b4eed833e26a7fa2bd93b" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="28" />
+                  </tagged-values>
+                </operation>
+                <operation id="o78db6d4048cf42b59b84a23a0f8d408c344" cid="OP015" name="set_duration" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public" abstract="true" virtual="true">
+                  <parameters>
+                    <parameter id="p2d4ad0cdc1d1493aaf83d291b7091a68" name="duration" type="u_int" type-id="u_int" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv34d7438215704899b8c1f17901dccd1a" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="set_duration" />
+                    <tagged-value id="tvbc7cda75cfde41b180d7009e3e1e6401" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_dispenser.h" />
+                    <tagged-value id="tv06e1512775eb417bb22b42e1f47fe667" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvd8ac7d05cab04276b2de6bc037da2486" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="529" />
+                    <tagged-value id="tv500f28d17bf144db8f57fa478637ecaa" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="46" />
+                  </tagged-values>
+                </operation>
+                <operation id="odb0a869eae28479fa882bdbedead9bee344" cid="OP016" name="Icnt_dispenser" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public" virtual="true">
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv8fd164b6aee14554a3b5d228ada39c48" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Icnt_dispenser" />
+                    <tagged-value id="tvb0c674b335e4482facd2a2025b1f56cb" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_dispenser.h" />
+                    <tagged-value id="tv9c9e90ea23184c47b32e06bc6ebe3753" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvf89f8448b79c4f0196b447a761a9d0c6" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="581" />
+                    <tagged-value id="tv57801874db0143a38a5eb18a823e7adb" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="36" />
+                  </tagged-values>
+                </operation>
+              </operations>
+              <source-codes>
+                <source-code language="ActionScript" />
+              </source-codes>
+            </item>
+            <item id="e089551c026b4c76959a0bccf6dace0d" cid="GNR002" type="generalization" name="" style-class="" creation-date="11/22/2022 11:04:47" from="bc069bdf5d7b491a964109db8bb129d0" to="ef75b9b4e48d417d8e68b911a8425ccf" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvacb318d0c745452a9b7ad12220ba8592" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="8a3be0b08bbc496aac65f055efeebc1e" cid="C009" type="class" name="cmdParser" style-class="" creation-date="11/22/2022 11:04:47" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv1e4ed85726e945e5ab3b993466c4c9ea" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv37cdd0cca7b648a197284fd91a8ccffb" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="cmdParser" />
+                <tagged-value id="tv5f9cbe2be2cd4b7b809cf3fbf5b380b1" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pf044c426b8d647a5bbbd7003d2fcf8b6_158853743" />
+                <tagged-value id="tvb6fb7fc5079441b8bd3218973c74063a" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cmdParser.h" />
+                <tagged-value id="tv97cd5cb4f63e4b1ea4d4e2f4f28e6ba3" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tvebb4f16a6d644edba57c6f30086b5cfb" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="360" />
+                <tagged-value id="tvb99d3c9035f64e7b914a3b49bec6a991" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="1063" />
+                <tagged-value id="tvc674c4ca47ab439e99421dbf7e67cc2d" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1425" />
+                <tagged-value id="tv2908024e3fdc414dae9f5533a708d66a" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="11/22/2022 09:39:10" />
+              </tagged-values>
+              <owned-items>
+                <owned-item ref="872924a5dc11462bbcb4efecf4d57540" />
+              </owned-items>
+              <attributes>
+                <attribute id="a6df8d1afe0a845a38c221da289d5b564344" cid="PROP015" name="Icnt_control" creation-date="11/22/2022 11:04:47" property-ref="872924a5dc11462bbcb4efecf4d57540" />
+              </attributes>
+            </item>
+            <item id="8086e35514434a5dbeb7f828dfb689d4" cid="C007" type="class" name="heating_controller" style-class="" creation-date="11/22/2022 11:04:47" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv0bdd2bdf06844267a49191735a5443cd" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tvbde6708581c240e8b07d810a754c6ed4" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="cnt_controller" />
+                <tagged-value id="tvd2f80348e9e64c609b4eb02720f777e9" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pf044c426b8d647a5bbbd7003d2fcf8b6_158853743" />
+                <tagged-value id="tvfcabf038bad542c39de48c83f7fa1275" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.h" />
+                <tagged-value id="tv465f0810782b493b82121889a2c010dc" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tva9c5fb4b958b47108b9a2080b1c19811" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="751" />
+                <tagged-value id="tv0c0d2252891e4530aba222a69699691e" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="607" />
+                <tagged-value id="tv6533f66b54cd49859a1ae5f32b86221a" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1362" />
+                <tagged-value id="tv04779bc36d3a4d3cb5484a66a7f9518d" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="09/30/2022 18:17:46" />
+              </tagged-values>
+              <owned-items>
+                <owned-item ref="701c779f57bb4170a054b2e4fe87874c" />
+                <owned-item ref="2126f9a9fd1f49d9bd64d44f79d2041c" />
+                <owned-item ref="df1f5b131ac849079c0ab1811e7f7971" />
+              </owned-items>
+              <attributes>
+                <attribute id="a4d6a4c7c9786461989bc2705236cd528344" cid="PROP019" name="dispenserPtr" creation-date="11/22/2022 11:04:47" property-ref="701c779f57bb4170a054b2e4fe87874c" />
+                <attribute id="a8f8edf254f7241718d7791889b6ce392344" cid="PROP020" name="motionPtr" creation-date="11/22/2022 11:04:47" property-ref="2126f9a9fd1f49d9bd64d44f79d2041c" />
+                <attribute id="ab0619b23c03743f49a1476b860f7cc10344" cid="PROP021" name="Intarg" creation-date="11/22/2022 11:04:47" property-ref="df1f5b131ac849079c0ab1811e7f7971" />
+              </attributes>
+              <operations>
+                <operation id="o55258f1fdac141cc928dbf5b2b43bc4f344" cid="OP051" name="cnt_controller" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public" virtual="true">
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv976e4dc3fe024dce996d235fe8690a05" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="cnt_controller" />
+                    <tagged-value id="tvc68717494c8d48689ddc17e346cd7b56" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.h" />
+                    <tagged-value id="tve1e0cd9cfa3a4b04bfbb9eeaed51edb4" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvb369014238df43e296695c3e53797f6e" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1328" />
+                    <tagged-value id="tv4a1399d10a034aa088b1a286650d03db" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="26" />
+                  </tagged-values>
+                </operation>
+                <operation id="o5643d0e53c864ed2b0e123b281ca573c344" cid="OP052" name="move_down" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tv53935c56d64d4e3281f5b99987d8d22c" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="move_down" />
+                    <tagged-value id="tva5ecdaf17c3c4f3a840523ebea21158f" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.cpp" />
+                    <tagged-value id="tv815eae54369949c2b16185a53c3e2366" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv4231de0c1eea42a2afdc213883c2076a" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="404" />
+                    <tagged-value id="tv64a03288b9d743caad1608dd84f2c11f" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="122" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+            
+    Serial.println("move down called");
+    motionPtr-&gt;move_down();
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o6af543b4c15645ddac94affd7cd82f13344" cid="OP053" name="move_up" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tv3f7eb8d9dffc4e34b4642542770f09e7" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="move_up" />
+                    <tagged-value id="tv8a011ff840cd4a5dab2c1e9724095134" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.cpp" />
+                    <tagged-value id="tv62dd887e400a4242b2b19e17bdc677a9" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv2fb737976d3942cebf3f49faebf168fb" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="530" />
+                    <tagged-value id="tvb258ef17b6934645b9820d38d03ba6b4" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="102" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    Serial.println("move up called");
+    motionPtr-&gt;move_up();
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o9a63530b7ca04c7c8a0baeb618dae5d6344" cid="OP054" name="vibrate" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tvf80320b33b034a09b07fec33b7b98dc6" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="vibrate" />
+                    <tagged-value id="tvc3d8a9f641754a64b5a34648ad9f9d95" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.cpp" />
+                    <tagged-value id="tvca3e441509dc4aa09a429fdcdb552adf" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv0c974f9c1d89487a8befebcf3f1b76dd" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="636" />
+                    <tagged-value id="tv1d74c17248d54ba2ab1e6c664952d7a4" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="107" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    Serial.println("vibrate called");
+
+    dispenserPtr-&gt;vibrate();
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="ocbc4fdfc499b42f6bd3a05e2c37c18c8344" cid="OP055" name="turn_on" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tva3a1aa874c19468587ab0d98a990ad9b" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="turn_on" />
+                    <tagged-value id="tv558ece78796a40dea1971de30f8855c2" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.cpp" />
+                    <tagged-value id="tv2fd2cd859bc1483e84d124ed8ff36805" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvcb5e0ad9136f4c178bfb2909accb8b7c" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="747" />
+                    <tagged-value id="tv0b60cc6130014b84b9e29464a38aa0b9" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="66" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    dispenserPtr-&gt;turn_on();
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o17c91de98dd744e1a6a98a7ec11d14f9344" cid="OP056" name="turn_off" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tvfecc1f8aadb14db78a8d1883fc812d68" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="turn_off" />
+                    <tagged-value id="tv232fba53c8a8400b9d6c7ee346f554b2" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.cpp" />
+                    <tagged-value id="tv0a97feb7064644e4aec0bec994d99f68" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvc00381975ae94df4acd0b16d9a7a3f55" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="817" />
+                    <tagged-value id="tv14141b712520477495e933d1d323960f" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="68" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    dispenserPtr-&gt;turn_off();
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oa072fe6a5ba44601bd53039130de6c92344" cid="OP057" name="set_duration" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p34b76d69313f4d28a5f80743914f4563" name="duration" type="u_int" type-id="u_int" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv12d0114132334aae8bb964fe6d847b59" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="set_duration" />
+                    <tagged-value id="tvfb2e457d47024308a02d176db1d88a9a" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.cpp" />
+                    <tagged-value id="tv872429a4203a4b69bfc82f3a7096392b" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvcc4b5b00a90a41ac91f4ff855e976433" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="889" />
+                    <tagged-value id="tv6c2291c9b2eb42bba16d67412fefe134" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="98" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    dispenserPtr-&gt;set_duration(duration);
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oec36653a0eb6495ea93f38cdeb518d38344" cid="OP058" name="set_dur" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tv85c1b064304148fab1de7f330c07a553" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="set_dur" />
+                    <tagged-value id="tveebac1bce21e454681c147061b9df2f8" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.cpp" />
+                    <tagged-value id="tv3b30eddf2a394558abb1fd00d5fed496" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv9af89a44d7874c4488f53d5046abfd9c" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="991" />
+                    <tagged-value id="tvc3d3a1db438a407b988de1ba8cb0cc54" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="208" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    Serial.println("set duration called");
+    Serial.println("with arg: ");
+    auto argInt = Intarg.toInt();
+    Serial.println(Intarg);
+    set_duration(argInt);
+
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o4f8313a63fef4cf19437fd8ec5731bbf344" cid="OP059" name="unlock" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tv8c68aef5f9d44f0480329567c9f33968" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="unlock" />
+                    <tagged-value id="tv982500f4ad024b318f7b2824923696c1" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.cpp" />
+                    <tagged-value id="tvaa75206efdb743cabb1c75a16de3feb9" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvd269238f2a684704bb95d0892408bf16" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1205" />
+                    <tagged-value id="tv73afc05c98dc4d3197fd8760eafd8632" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="99" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    Serial.println("unlock called");
+    motionPtr-&gt;unlock();
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o02ab3ad455f94dc7aaba0647015aa7ea344" cid="OP060" name="getArg" creation-date="11/22/2022 11:04:47" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p2840a6c10e014a1c8bfa6ec2d6b00725" name="Extarg" type="String" type-id="String" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv1214867cb8ad4140a3b64cceaa1b7f15" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getArg" />
+                    <tagged-value id="tv2bca442825954d04ad27706080f97745" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_controller.cpp" />
+                    <tagged-value id="tv4eb3b7337b6c43a9a8aa24a0eb1fa517" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv319bbe80514b47a79c1bd45e686e8ec8" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1308" />
+                    <tagged-value id="tvd4de4a7f479f4488bf06bda6f66ebdd9" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="153" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    Intarg = Extarg;
+    Serial.println("setting internal arg to: ");
+    Serial.println(Intarg);
+
+
+</source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+              <source-codes>
+                <source-code language="ActionScript" />
+              </source-codes>
+            </item>
+            <item id="c05a93eccf7e4a3984183c9e8ce492e2" cid="PROP032" type="property" name="cmdParser parser" style-class="" owner="bbc0e348d69d4c04b6f55e5b5d4e9f91" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="11/22/2022 11:11:02" visibility="private">
+              <feature />
+              <structural-feature type="" type-id="" />
+              <property />
+            </item>
+            <item id="bbc0e348d69d4c04b6f55e5b5d4e9f91" cid="C010" type="class" name="webServer" style-class="" creation-date="11/22/2022 11:04:47" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv298218d33b1f431390525e0563fdca3e" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tva24a2938cca74ac8a48a9f2887b26771" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="webServer" />
+                <tagged-value id="tv26572b88415c424aae5af7d86958e884" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pf044c426b8d647a5bbbd7003d2fcf8b6_158853743" />
+                <tagged-value id="tv307ea0d65326476d845e78d4c2118623" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_server.h" />
+                <tagged-value id="tva9b0053ff0c645f798ee5c7b4aa96119" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv000205255f7344d885254d41b8b46573" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="407" />
+                <tagged-value id="tv35cd9215fb4c47c298783d631f7dbedb" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="1154" />
+                <tagged-value id="tv8ebc93fbddba47829d7fbddc7bb8e051" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1567" />
+                <tagged-value id="tvad8427dd3a5641699c7e132703f761ec" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="10/18/2022 14:25:18" />
+              </tagged-values>
+              <owned-items>
+                <owned-item ref="c05a93eccf7e4a3984183c9e8ce492e2" />
+              </owned-items>
+              <attributes>
+                <attribute id="a236e0d2e0283489b83767c9ba7bd109b938" cid="PROP032" name="cmdParser parser" creation-date="11/22/2022 11:11:02" property-ref="c05a93eccf7e4a3984183c9e8ce492e2" />
+              </attributes>
+            </item>
+          </abstract-items>
+          <sub-models />
+          <diagram type="uml-class" id="p4cca7b4a3b1448758be48ac4578fbeca_438480530" name="" order-index="1" uid="" auto-routed-paths="false" default-line-style="default" namespace="" view-location="-265,-165" zoom="0.5">
+            <style>
+              <background-color index="1" color="#FFFFFFFF" />
+              <background-color index="2" color="#FFFFFFFF" />
+              <background-type type="vertical-linear" />
+            </style>
+            <meta>
+              <authors>
+                <author> </author>
+              </authors>
+              <description />
+              <creation-date>11/22/2022 11:04:47</creation-date>
+              <change-date>11/22/2022 11:10:43</change-date>
+              <revision-count>0</revision-count>
+              <version />
+            </meta>
+            <tagged-values>
+              <tagged-value id="tvf5139c54e4e7430e9cea9f39c668d461" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+            </tagged-values>
+            <abstract-items>
+              <item id="169cc7944a4e426bae5593c7a974a310" cid="REL004" type="relationship" name="" style-class="" change-tracking-state="added" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="11/22/2022 11:10:06" from="122eb92272344af3bfdcf1ec4545480b" to="8086e35514434a5dbeb7f828dfb689d4" visibility="package">
+                <owned-items>
+                  <owned-item ref="29a878fe9187478c9fd1dfa3da4422d4" />
+                  <owned-item ref="80f11e3f0cca46739326932f82df04d1" />
+                </owned-items>
+                <relation from="122eb92272344af3bfdcf1ec4545480b" to="8086e35514434a5dbeb7f828dfb689d4" derived="false">
+                  <start-role id="umlar-48e4bd35-bce2-4538-b5e3-74353d365942" name="" navigability="" association-type="association" visibility="private" property-ref="29a878fe9187478c9fd1dfa3da4422d4" />
+                  <end-role id="umlar-76e81e50-7b0f-4ff0-920b-5d094016205d" name="" navigability="" association-type="association" visibility="private" property-ref="80f11e3f0cca46739326932f82df04d1" />
+                </relation>
+              </item>
+              <item id="6e6c68f089584d2c822330ae0b73eace" cid="PROP014" type="property" name="sin_obj" style-class="" owner="bc069bdf5d7b491a964109db8bb129d0" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="11/22/2022 11:04:47" visibility="private">
+                <tagged-values>
+                  <tagged-value id="tv49d8e7170d7f4e95844591c9fca7a31d" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="sin_obj" />
+                  <tagged-value id="tv2cb537ca67cf414291456569d186063c" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pf044c426b8d647a5bbbd7003d2fcf8b6_158853743" />
+                  <tagged-value id="tvcfd59d0d98e54793bb43199b47e5839d" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_dispenser.h" />
+                  <tagged-value id="tv154d1a63219a4232b0b7779a74827805" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                  <tagged-value id="tv47d039e7f1cd4fdc8547c09381383e8c" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="713" />
+                  <tagged-value id="tv18998d2e41e846bcaa180340511aeac7" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="21" />
+                  <tagged-value id="tv06c4e2613435445195f301b0d6af4419" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="954" />
+                  <tagged-value id="tv916f8afa17e04d15ad0e8a59b05ba3e4" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="09/30/2022 18:17:46" />
+                </tagged-values>
+                <feature />
+                <structural-feature type="Sin_wave_dac" type-id="Sin_wave_dac" />
+                <property />
+              </item>
+              <item id="4c2fde7dfdc04fb89bec7d6632a6729b" cid="PROP013" type="property" name="dac_obj" style-class="" owner="bc069bdf5d7b491a964109db8bb129d0" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="11/22/2022 11:04:47" visibility="private">
+                <tagged-values>
+                  <tagged-value id="tv95f81eab075b48178e589d57c55802f7" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="dac_obj" />
+                  <tagged-value id="tvd7f5f75dcea84f5090a7e036cc856d38" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pf044c426b8d647a5bbbd7003d2fcf8b6_158853743" />
+                  <tagged-value id="tve0a1a537fd764da69bbca25e2f78f383" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cnt_dispenser.h" />
+                  <tagged-value id="tvccccfba82b2b431ea1e65d6174314f78" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                  <tagged-value id="tv21bb209ada7b4eb48aee8823217c481c" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="687" />
+                  <tagged-value id="tvf908102c3a884b8cbeca9bc26b7e2f96" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="20" />
+                  <tagged-value id="tvb29c4ed8bd524735b56c0a50fd99c9cb" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="954" />
+                  <tagged-value id="tva1a5228ca3e048539e1542c819d71ece" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="09/30/2022 18:17:46" />
+                </tagged-values>
+                <feature />
+                <structural-feature type="Dac_mcp4922" type-id="Dac_mcp4922" />
+                <property />
+              </item>
+              <item id="4fd70ef4f9524976a6b3bf3de96c835b" cid="REL001" type="relationship" name="" style-class="" change-tracking-state="added" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="11/22/2022 11:09:37" from="f6683208fa674fc0820d79f812fba760" to="8a3be0b08bbc496aac65f055efeebc1e" visibility="package">
+                <owned-items>
+                  <owned-item ref="f1f1669a19c74459818f386b08c73a70" />
+                  <owned-item ref="6ceeb8d7678746179279bc1d2d86e17e" />
+                </owned-items>
+                <relation from="f6683208fa674fc0820d79f812fba760" to="8a3be0b08bbc496aac65f055efeebc1e" derived="false">
+                  <start-role id="umlar-9acdc01a-b2de-4bf5-b678-b0ff84ed019d" name="" navigability="" association-type="association" visibility="private" property-ref="f1f1669a19c74459818f386b08c73a70" />
+                  <end-role id="umlar-72dd1c75-c422-4e3a-b902-c72253f1650f" name="" navigability="" association-type="association" visibility="private" property-ref="6ceeb8d7678746179279bc1d2d86e17e" />
+                </relation>
+              </item>
+              <item id="872924a5dc11462bbcb4efecf4d57540" cid="PROP015" type="property" name="Icnt_control" style-class="" owner="8a3be0b08bbc496aac65f055efeebc1e" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="11/22/2022 11:04:47" visibility="private">
+                <tagged-values>
+                  <tagged-value id="tvf5d9489bda504a7a947d9e942ea553b7" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Icnt_control" />
+                  <tagged-value id="tv1437edbe312a4cb3b89e0da95cb7a7b5" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pf044c426b8d647a5bbbd7003d2fcf8b6_158853743" />
+                  <tagged-value id="tvb42b6af7048540069eb69cc358a8dae6" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\template_esp32_wifi_server\wifi_server\cmdParser.h" />
+                  <tagged-value id="tv7f65d9f848d74a45aa21e227fead5d13" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                  <tagged-value id="tv6bc3e517dbb34c9e8b5d00842ec6f394" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="394" />
+                  <tagged-value id="tvc204e621d3aa4ea799aaf7e221872547" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="46" />
+                  <tagged-value id="tv5258245e03b44ac8a4ecc52cd02d5c72" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1425" />
+                  <tagged-value id="tvfa63ffc8cf814e78b8c0ae81ccc8c210" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="11/22/2022 09:39:10" />
+                </tagged-values>
+                <feature />
+                <structural-feature type="std::shared_ptr&lt;Icnt_controller&gt;" type-id="std::shared_ptr&lt;Icnt_controller&gt;" />
+                <property />
+              </item>
+              <item id="ac290573d7d2495bb5adcef6dc92e872" cid="REL002" type="relationship" name="" style-class="" change-tracking-state="added" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="11/22/2022 11:09:53" from="ef75b9b4e48d417d8e68b911a8425ccf" to="8086e35514434a5dbeb7f828dfb689d4" visibility="package">
+                <owned-items>
+                  <owned-item ref="dff358b092ac4ff7b1e3a7ff3139cd20" />
+                  <owned-item ref="2cb83ecaadc54b14b4551d43f1673a1a" />
+                </owned-items>
+                <relation from="ef75b9b4e48d417d8e68b911a8425ccf" to="8086e35514434a5dbeb7f828dfb689d4" derived="false">
+                  <start-role id="umlar-c0d3bc8b-94fa-4c92-a1aa-bbee85ec4947" name="" navigability="" association-type="association" visibility="private" property-ref="dff358b092ac4ff7b1e3a7ff3139cd20" />
+                  <end-role id="umlar-839c880f-1b4c-487d-be7a-0a49340350ea" name="" navigability="" association-type="association" visibility="private" property-ref="2cb83ecaadc54b14b4551d43f1673a1a" />
+                </relation>
+              </item>
+              <item id="541d78c1d5e54e159a442857b7ed069b" cid="REL005" type="relationship" name="" style-class="" change-tracking-state="added" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="11/22/2022 11:10:24" from="bbc0e348d69d4c04b6f55e5b5d4e9f91" to="8a3be0b08bbc496aac65f055efeebc1e" visibility="package">
+                <owned-items>
+                  <owned-item ref="6751c701ce664087a277bdb77cfb0d48" />
+                  <owned-item ref="1dca063f026a4605820cb114ebed8a6c" />
+                </owned-items>
+                <relation from="bbc0e348d69d4c04b6f55e5b5d4e9f91" to="8a3be0b08bbc496aac65f055efeebc1e" derived="false">
+                  <start-role id="umlar-aa040aa5-b713-4122-9395-ac6c059965a7" name="" navigability="" association-type="association" visibility="private" property-ref="6751c701ce664087a277bdb77cfb0d48" />
+                  <end-role id="umlar-df59c764-d4fa-4091-9b82-4da9481f85b1" name="" navigability="" association-type="association" visibility="private" property-ref="1dca063f026a4605820cb114ebed8a6c" />
+                </relation>
+              </item>
+            </abstract-items>
+            <layer id="06caa0b5d94842b3816d5e0012de25fd" name="Default" visible="true" enabled="true" locked="false">
+              <item id="ebf16b8f8fbb4e599c66dcf5a2f65b1f" iid="14b189b2dfbb40b0899fe850938f1fd7" creation-date="11/22/2022 11:04:47" order-index="0" type="relation">
+                <layout line-style="perpendicular" lock-to-fields="false" auto-path="" x1="855" y1="961" x2="855" y2="861" start-border-pos="0.125113300492611" end-border-pos="0.623716981132076" name-position="0,20">
+                  <points>
+                    <point x="855" y="961" />
+                    <point x="855" y="911" />
+                    <point x="855" y="911" />
+                    <point x="855" y="861" />
+                  </points>
+                </layout>
+                <relation from="605aeea7ccc344a0a8c4f52dc08f1c74" from-iid="a4e537d85b174c78b4970237c199598f" to="122eb92272344af3bfdcf1ec4545480b" to-iid="2747d5643f554132bdbbb851f4613efc" />
+              </item>
+              <item id="122eb92272344af3bfdcf1ec4545480b" iid="2747d5643f554132bdbbb851f4613efc" creation-date="11/22/2022 11:04:47" order-index="2" type="entity">
+                <layout ax="775" ay="744" awidth="159" aheight="117" x="775" y="744" width="159" height="117" />
+                <classifier />
+                <class />
+              </item>
+              <item id="605aeea7ccc344a0a8c4f52dc08f1c74" iid="a4e537d85b174c78b4970237c199598f" creation-date="11/22/2022 11:04:47" order-index="3" type="entity">
+                <layout ax="753" ay="961" awidth="203" aheight="136" x="753" y="961" width="203" height="136" />
+                <classifier />
+                <class />
+              </item>
+              <item id="f6683208fa674fc0820d79f812fba760" iid="ee577b909ca643218937699f07b4d3e5" creation-date="11/22/2022 11:04:47" order-index="4" type="entity">
+                <layout ax="480" ay="0" awidth="197" aheight="231" x="480" y="0" width="197" height="231" />
+                <classifier />
+                <class />
+              </item>
+              <item id="bc069bdf5d7b491a964109db8bb129d0" iid="f7b978e37347439d89acf4b6365b5f9c" creation-date="11/22/2022 11:04:47" order-index="5" type="entity">
+                <layout ax="415" ay="962" awidth="197" aheight="174" x="415" y="962" width="197" height="174" />
+                <classifier />
+                <class />
+              </item>
+              <item id="bbc0e348d69d4c04b6f55e5b5d4e9f91" iid="315b3135dec449c3ba5d2be20158faef" creation-date="11/22/2022 11:04:47" order-index="7" type="entity">
+                <layout ax="956" ay="-283" awidth="260" aheight="86" x="956" y="-283" width="260" height="86" rotation-center="-84,-22.5" />
+                <classifier />
+                <class />
+              </item>
+              <item id="8a3be0b08bbc496aac65f055efeebc1e" iid="86a49c62c7f649909227f70eea7cb45b" creation-date="11/22/2022 11:04:47" order-index="8" type="entity">
+                <layout ax="971" ay="-23" awidth="260" aheight="254" x="971" y="-23" width="260" height="254" rotation-center="49.5,117" />
+                <classifier />
+                <class />
+              </item>
+              <item id="ef75b9b4e48d417d8e68b911a8425ccf" iid="2659c755ce2e441a8118ad996ec9aefc" creation-date="11/22/2022 11:04:47" order-index="9" type="entity">
+                <layout ax="415" ay="726" awidth="197" aheight="136" x="415" y="726" width="197" height="136" />
+                <classifier />
+                <class />
+              </item>
+              <item id="8086e35514434a5dbeb7f828dfb689d4" iid="ed6b491d476f4d9fb77a805b95450d91" creation-date="11/22/2022 11:04:47" order-index="10" type="entity">
+                <layout ax="434.5" ay="331" awidth="288" aheight="288" x="434.5" y="331" width="288" height="288" />
+                <classifier />
+                <class />
+              </item>
+              <item id="e44003b4a01b4ff8b568841d6215ac5f" iid="d1fda5a390ff4a7ba9328d9117ccc0ac" creation-date="11/22/2022 11:04:47" order-index="12" type="relation">
+                <layout line-style="perpendicular" lock-to-fields="false" auto-path="" x1="577" y1="331" x2="578" y2="231" start-border-pos="0.124067708333333" end-border-pos="0.625131979695431" name-position="0,20">
+                  <points>
+                    <point x="577" y="331" />
+                    <point x="578" y="281" />
+                    <point x="578" y="281" />
+                    <point x="578" y="231" />
+                  </points>
+                </layout>
+                <relation from="8086e35514434a5dbeb7f828dfb689d4" from-iid="ed6b491d476f4d9fb77a805b95450d91" to="f6683208fa674fc0820d79f812fba760" to-iid="ee577b909ca643218937699f07b4d3e5" />
+              </item>
+              <item id="e089551c026b4c76959a0bccf6dace0d" iid="f3361ed080c5470baee236f1da6dafd9" creation-date="11/22/2022 11:04:47" order-index="13" type="relation">
+                <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="513" y1="962" x2="513" y2="862" start-border-pos="0.124365478754044" end-border-pos="0.625634521245956" start-local-pos="98" end-local-pos="98" name-position="0,20">
+                  <points>
+                    <point x="513" y="962" />
+                    <point x="513" y="912" />
+                    <point x="513" y="912" />
+                    <point x="513" y="862" />
+                  </points>
+                </layout>
+                <relation from="bc069bdf5d7b491a964109db8bb129d0" from-iid="f7b978e37347439d89acf4b6365b5f9c" to="ef75b9b4e48d417d8e68b911a8425ccf" to-iid="2659c755ce2e441a8118ad996ec9aefc" />
+              </item>
+              <item id="4fd70ef4f9524976a6b3bf3de96c835b" iid="47ba1789a84141b3986fcd4e3bb6c50e" creation-date="11/22/2022 11:09:37" order-index="14" type="relation">
+                <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-to-fields="true" auto-path="" x1="677" y1="104" x2="971" y2="104" start-border-pos="0.362012987012987" end-border-pos="0.875" start-local-pos="104" name-position="0,20">
+                  <points>
+                    <point x="677" y="104" />
+                    <point x="971" y="104" />
+                  </points>
+                </layout>
+                <relation from="f6683208fa674fc0820d79f812fba760" from-iid="ee577b909ca643218937699f07b4d3e5" from-field="o3d3fdc5eedde43a79fe6d0d09cd3ad69344" to="8a3be0b08bbc496aac65f055efeebc1e" to-iid="86a49c62c7f649909227f70eea7cb45b" />
+              </item>
+              <item id="ac290573d7d2495bb5adcef6dc92e872" iid="107e6e82a09a4ea1a127cc43eaa859de" creation-date="11/22/2022 11:09:53" order-index="15" type="relation">
+                <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-to-fields="false" auto-path="" x1="528" y1="726" x2="549" y2="619" start-border-pos="0.142947511624564" end-border-pos="0.650512377421061" name-position="0,20">
+                  <points>
+                    <point x="528" y="726" />
+                    <point x="549" y="619" />
+                  </points>
+                </layout>
+                <relation from="ef75b9b4e48d417d8e68b911a8425ccf" from-iid="2659c755ce2e441a8118ad996ec9aefc" to="8086e35514434a5dbeb7f828dfb689d4" to-iid="ed6b491d476f4d9fb77a805b95450d91" />
+              </item>
+              <item id="169cc7944a4e426bae5593c7a974a310" iid="fa7f954853f642558ed66dd7d52c29ea" creation-date="11/22/2022 11:10:06" order-index="16" type="relation">
+                <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-to-fields="true" auto-path="" x1="805" y1="744" x2="722" y2="530" start-border-pos="0.0472419786753145" end-border-pos="0.422309027777778" end-local-pos="199" name-position="0,20">
+                  <points>
+                    <point x="805" y="744" />
+                    <point x="722" y="530" />
+                  </points>
+                </layout>
+                <relation from="122eb92272344af3bfdcf1ec4545480b" from-iid="2747d5643f554132bdbbb851f4613efc" to="8086e35514434a5dbeb7f828dfb689d4" to-iid="ed6b491d476f4d9fb77a805b95450d91" to-field="o17c91de98dd744e1a6a98a7ec11d14f9344" />
+              </item>
+              <item id="541d78c1d5e54e159a442857b7ed069b" iid="810e596f0a004f0abbe1c5ebe3051f6e" creation-date="11/22/2022 11:10:24" order-index="17" type="relation">
+                <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-to-fields="false" auto-path="" x1="1088" y1="-197" x2="1095" y2="-23" start-border-pos="0.623197115384615" end-border-pos="0.119675152118389" name-position="0,20">
+                  <points>
+                    <point x="1088" y="-197" />
+                    <point x="1095" y="-23" />
+                  </points>
+                </layout>
+                <relation from="bbc0e348d69d4c04b6f55e5b5d4e9f91" from-iid="315b3135dec449c3ba5d2be20158faef" to="8a3be0b08bbc496aac65f055efeebc1e" to-iid="86a49c62c7f649909227f70eea7cb45b" />
+              </item>
+            </layer>
+          </diagram>
+        </model>
+      </sub-models>
+      <diagram type="uml-class" id="pc59b0699ad3f43b0a6a7fcad108f9b4d_706805286" name="ClassDiagram1" order-index="1" uid="" auto-routed-paths="false" default-line-style="default">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>11/22/2022 11:02:26</creation-date>
+          <change-date>11/22/2022 11:02:26</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items />
+        <layer id="43dedd7a45d5428b93fbc94b7aa9d87c" name="Default" visible="true" enabled="true" locked="false" />
+      </diagram>
+      <diagram type="uml-package" id="pb88bcdc9a9f34e9185719bc0d4f0e25e_707006496" name="Packages" order-index="2" overview-order-index="0" uid="" auto-routed-paths="false" default-line-style="default" namespace="">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="vertical-linear" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>11/22/2022 11:04:47</creation-date>
+          <change-date>11/22/2022 11:04:47</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <tagged-values>
+          <tagged-value id="tv15cb2244c4454c178ade25bb7bdd8c77" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+        </tagged-values>
+        <abstract-items />
+        <layer id="8430098c98994b70bb917971e2a9838a" name="Default" visible="true" enabled="true" locked="false">
+          <item id="12c2354a93e04edc87a10b93cb10fe0d" iid="81cf987a515e496b9965bf8b23573dda" creation-date="11/22/2022 11:04:47" order-index="0" type="entity">
+            <layout ax="0" ay="0" awidth="84" aheight="56" x="0" y="0" width="84" height="56" expanded="0,0,84,56" collapsed="0,0,0,0" />
+            <package name-in-body="false" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
